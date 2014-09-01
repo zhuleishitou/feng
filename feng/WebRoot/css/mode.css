@@ -1,0 +1,21 @@
+
+.left_bg01 a:link, .left_bg01 a:visited, .left_bg01 a:hover, .left_bg01 a:active, .left_bg01 a {
+    height: 37px;
+    line-height: 16px;
+    padding-top: 8px;
+    text-indent: 0;
+}
+.left_bg01 {
+    background: url("/img/dian_tu.jpg") no-repeat scroll 10% 16px rgba(0, 0, 0, 0);
+    height: auto;
+}
+.left_bg {
+    background: url("/img/dian_tu.jpg") no-repeat scroll 10% 16px rgba(0, 0, 0, 0);
+    height: auto;
+}
+.left_bg a:link, .left_bg a:visited, .left_bg a:hover, .left_bg a:active {
+    height: 37px;
+    line-height: 16px;
+    padding-top: 8px;
+    text-indent: 0;
+}
