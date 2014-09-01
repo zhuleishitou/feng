@@ -26,7 +26,7 @@
 					<div class="menu1">
 						<a href="javascript:void(0)" onclick="load_content(this,'${path}/jsp/modes/products.jsp')" >产品中心</a>
 						<ul style="width: 280px;">
-							<li style="width: 210px;"><a href="javascript:void(0)" onclick="load_content(this,'${path}/jsp/modes/products.jsp')" >立式燃油（气）蒸汽锅炉</a>
+							<li style="width: 210px;"><a href="javascript:void(0)" onclick="load_content(this,'${path}/product.do?product_id=1')" >立式燃油（气）蒸汽锅炉</a>
 							</li>
 							<li style="width: 210px;"><a href="/index.php?id=168">安全单向导入系统&nbsp;Topwalk-UIS</a>
 							</li>

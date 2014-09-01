@@ -6,6 +6,6 @@
 <title>丰然锅炉</title>
 </head>
 <body>
-	<jsp:forward page="/jsp/main.jsp"></jsp:forward>
+	<jsp:forward page="/index.do"></jsp:forward>
 </body>
 </html>
