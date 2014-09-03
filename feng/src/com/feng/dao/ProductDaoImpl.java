@@ -2,6 +2,8 @@ package com.feng.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.jdbc.core.RowCallbackHandler;
 
@@ -27,6 +29,22 @@ public class ProductDaoImpl extends PublicAbsDao implements ProductDao {
 			}
 		});
 		return product;
+	}
+
+	@Override
+	public List<Product> getFindAll() {
+		final List<Product> products=new ArrayList<Product>();
+		String sql="select id,title from products order by  sequence ";
+		this.jdbcTemplate.query(sql, new RowCallbackHandler() {
+			@Override
+			public void processRow(ResultSet result) throws SQLException {
+				Product product=new Product(); 
+				product.setTitle(result.getString("title"));
+				product.setId(StringUtil.toLong(result.getString("id"), 0L));
+				products.add(product); 
+			}
+		});
+		return products;
 	}
 		
 }

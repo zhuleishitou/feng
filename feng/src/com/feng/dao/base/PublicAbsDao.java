@@ -8,38 +8,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class PublicAbsDao implements PublicDao {
 	@Autowired
 	protected JdbcTemplate jdbcTemplate;
+
 	@Override
-	public List getInfos(String id) {
+	public List getFindAll() {
 		return null;
-	}
-
-	@Override
-	public List PageBeanInfo(String sql, int offset, int pagesize) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getCount(String sql) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public List getFindAll(String sql) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int SaveOfUpdate(String sql) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override
 	public Object getInfo(long id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

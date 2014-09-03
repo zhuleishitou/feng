@@ -7,7 +7,7 @@
 			<img align="absmiddle" src="/img/nat_1.jpg">
 			<font color="#333333"><font color="#333333">您现在的位置:&nbsp;</font></font><font
 				color="#333333"></font><a target="_self" href="/"><font
-				color="#333333">河北省丰然锅炉制造有限责任公司</font></a><font color="#333333"><img
+				color="#333333">${company}</font></a><font color="#333333"><img
 				align="bottom" border="0" src="${path}/img/next.gif"></font><a
 				target="_self" href="/index.php?id=101"><font color="#333333"></font></a><font
 				color="#333333"><a href="/index.php?id=108">关于丰然</a></font><font

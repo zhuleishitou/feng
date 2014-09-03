@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"	pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<div id="preview-content-head">
 		<div id="preview-slider">
 			<div id="preview-slide-0"
@@ -225,7 +226,7 @@
 		<div class="left_t" style="margin-left: 8px;">
 			<div class="tu_02 tu_bj" id="th_b">
 				<h2>产品中心</h2>
-				<a class="moreim" href="/index.php?id=108">+ 更多</a>
+				<a class="moreim" onclick="load_content(this,'/product.do?product_id=0101','product_a')" href="javascript:void(0)" >+ 更多</a>
 			</div>
 			<div class="tu_01x">
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -237,9 +238,6 @@
 									<tbody>
 										<tr>
 											<td>
-
-
-
 												<table border="0" cellpadding="4" cellspacing="0"
 													width="100%">
 													<tbody>
@@ -255,10 +253,6 @@
 														</tr>
 													</tbody>
 												</table>
-
-
-
-
 											</td>
 										</tr>
 										<tr>
@@ -281,120 +275,29 @@
 												<table border="0" cellpadding="0" cellspacing="1"
 													width="100%" align="center">
 													<tbody>
-														<tr>
-															<td>
-																<table border="0" cellpadding="0" cellspacing="0"
-																	width="99%" align="center">
-																	<tbody>
-
-																		<tr id="bold_t">
-																			<td height="22"><a
-																				title="部门间信息共享与服务平台 Topwalk-ISSP"
-																				href="http://www.topwalk.com/index.php?id=108"
-																				target="_blank"><font
-																					style="font-weight: bold; font-size: 14px;">·</font>
-																					部门间信息共享与服务平台 Topwalk-ISSP</a></td>
-
-																			<td class="time01" align="right"></td>
-																		</tr>
-
-																		<tr>
-																			<td colspan="3"></td>
-																		</tr>
-
-																	</tbody>
-																</table>
-															</td>
-														</tr>
-														<tr>
-															<td><table border="0" cellpadding="0"
-																	cellspacing="0" width="99%" align="center">
-																	<tbody>
-
-																		<tr id="bold_t">
-																			<td height="22"><a title="安全单向导入系统 Topwalk-UIS"
-																				href="http://www.topwalk.com/index.php?id=168"
-																				target="_blank"><font
-																					style="font-weight: bold; font-size: 14px;">·</font>
-																					安全单向导入系统 Topwalk-UIS</a></td>
-
-																			<td class="time01" align="right"></td>
-																		</tr>
-
-																		<tr>
-																			<td colspan="3"></td>
-																		</tr>
-
-																	</tbody>
-																</table></td>
-														</tr>
-														<tr>
-															<td><table border="0" cellpadding="0"
-																	cellspacing="0" width="99%" align="center">
-																	<tbody>
-
-																		<tr id="bold_t">
-																			<td height="22"><a title="安全数据交换系统 Topwalk-DTP"
-																				href="http://www.topwalk.com/index.php?id=169"
-																				target="_blank"><font
-																					style="font-weight: bold; font-size: 14px;">·</font>
-																					安全数据交换系统 Topwalk-DTP</a></td>
-
-																			<td class="time01" align="right"></td>
-																		</tr>
-
-																		<tr>
-																			<td colspan="3"></td>
-																		</tr>
-
-																	</tbody>
-																</table></td>
-														</tr>
-														<tr>
-															<td><table border="0" cellpadding="0"
-																	cellspacing="0" width="99%" align="center">
-																	<tbody>
-
-																		<tr id="bold_t">
-																			<td height="22"><a title="安全视频交换系统 Topwalk-MTP"
-																				href="http://www.topwalk.com/index.php?id=170"
-																				target="_blank"><font
-																					style="font-weight: bold; font-size: 14px;">·</font>
-																					安全视频交换系统 Topwalk-MTP</a></td>
-
-																			<td class="time01" align="right"></td>
-																		</tr>
-
-																		<tr>
-																			<td colspan="3"></td>
-																		</tr>
-
-																	</tbody>
-																</table></td>
-														</tr>
-														<tr>
-															<td><table border="0" cellpadding="0"
-																	cellspacing="0" width="99%" align="center">
-																	<tbody>
-
-																		<tr id="bold_t">
-																			<td height="22"><a
-																				title="应用安全监测与异常流量分析系统 Topwalk-ASM"
-																				href="http://www.topwalk.com/index.php?id=171"
-																				target="_blank"><font
-																					style="font-weight: bold; font-size: 14px;">·</font>
-																					应用安全监测与异常流量分析系统 Topwalk-ASM</a></td>
-
-																			<td class="time01" align="right"></td>
-																		</tr>
-
-																		<tr>
-																			<td colspan="3"></td>
-																		</tr>
-
-																	</tbody>
-																</table></td>
-														</tr>
+														<c:forEach items="${products}" var="product_tmp" step="1" begin="0" end="4">
+															<tr>
+																<td>
+																	<table border="0" cellpadding="0" cellspacing="0"
+																		width="99%" align="center">
+																		<tbody>
+																			<tr id="bold_t">
+																				<td height="22">
+																					<a title="${product_tmp.title}" href="javascript:void(0)" onclick="load_content(this,'${path}/product.do?product_id=${product_tmp.id}','product_a')" >
+																						<font style="font-weight: bold; font-size: 14px;">·</font>
+																						${product_tmp.title}
+																					</a>
+																				</td>
+																				<td class="time01" align="right"></td>
+																			</tr>
+																			<tr>
+																				<td colspan="3"></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</c:forEach>
 														<tr>
 															<td></td>
 														</tr>

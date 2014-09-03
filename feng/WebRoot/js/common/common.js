@@ -1,8 +1,8 @@
 String.prototype.endWith = function(oString) {
 	var reg = new RegExp(oString + "$");
 	return reg.test(this);
-}
-function load_content(prop, url) {
+};
+function load_content(prop, url,change) {
 	if (url == null || url == "") {
 		return;
 	}
@@ -12,7 +12,11 @@ function load_content(prop, url) {
 		url += "&t=" + new Date().getTime();
 	}
 	jQuery("#content").load(url, function() {
-		change_style(prop);
+		if(change==null){
+			change_style(prop);
+		}else{
+			change_style($("#"+change)[0]);
+		}
 	});
 }
 function change_style(prop){
