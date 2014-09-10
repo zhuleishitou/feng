@@ -316,7 +316,7 @@
 
 		<div class="left_t" style="margin-left: 8px;">
 			<div class="tu_03 tu_bj" id="th_b">
-				<h2>解决方案</h2>
+				<h2>售后服务</h2>
 				<a class="moreim" href="/index.php?id=114">+ 更多</a>
 			</div>
 			<div class="tu_01x">
