@@ -5,7 +5,7 @@
 		<h1>
 			<a class="pngfix"
 				style="padding: 0px; background: url(/img/logo.jpg) no-repeat left center"
-				href="/index.php"></a>
+				href="/index.do"></a>
 		</h1>
 		<div style="float: right;">
 			<img style="margin-right: 15px;" src="/img/dianhua.jpg" height="92">
