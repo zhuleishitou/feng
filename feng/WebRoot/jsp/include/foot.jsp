@@ -23,7 +23,7 @@
 			<h2
 				style="height: 24px; line-height: 24px; width: 210px; text-align: center; text-indent: 0px; font-size: 12px;">产品中心</h2>
 			<div id="hreft_at">
-				<c:forEach items="${products}" var="product_tmp" step="1" begin="6" end="10">
+				<c:forEach items="${products}" var="product_tmp" step="1" begin="7" end="10">
 					<a title="${product_tmp.title}" href="javascript:void(0)"
 						onclick="load_content(this,'${path}/product.do?product_id=${product_tmp.id}','product_a')">
 						<font style="font-weight: bold; font-size: 14px;">·</font>
