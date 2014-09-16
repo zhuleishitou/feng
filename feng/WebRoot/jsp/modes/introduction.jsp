@@ -10,10 +10,9 @@
 				color="#333333">${company}</font></a><font color="#333333"><img
 				align="bottom" border="0" src="${path}/img/next.gif"></font><a
 				target="_self" href="/index.php?id=101"><font color="#333333"></font></a><font
-				color="#333333"><a href="/index.php?id=108">关于丰然</a></font><font
+				color="#333333"><a href="javascript:void(0)" id="about">关于丰然</a></font><font
 				color="#333333"><img align="bottom" border="0"
-				src="/img/next.gif"></font><a target="_self"
-				href="/index.php?id=108"><font color="#333333">关于我们&nbsp;</font></a>
+				src="/img/next.gif"></font><a href="javascript:void(0)" id="about"><font color="#333333">关于我们&nbsp;</font></a>
 		</div>
 		<div class="bg001">
 			<div class="bg02">
