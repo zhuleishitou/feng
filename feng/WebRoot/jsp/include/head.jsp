@@ -8,8 +8,7 @@
 				href="/index.do"></a>
 		</h1>
 		<div style="float: right;">
-			<img style="margin-right: 15px;" src="/img/dianhua.jpg" height="92">
-			<img src="/img/weix.jpg" height="92">
+			<div style="width:200px;height:36px;padding-top:55px;font-size:17px;color:#7D7C82">客服电话：15930929888</div>
 		</div>
 	</div>
 	<!-- end of header -->

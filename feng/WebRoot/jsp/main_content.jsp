@@ -4,8 +4,7 @@
 		<div id="preview-slider">
 			<div id="preview-slide-0"
 				style="height: 100%; width: 100%; background: url(&quot;/img/banner3.jpg&quot;) no-repeat scroll 50% 0% rgb(0, 46, 61); display: block;">
-				<a style="display: block; height: 326px;" href="/index.php?id=108"
-					target="_blank">&nbsp;</a>
+				<a style="display: block; height: 326px;" href="javascript:void(0)" onclick="load_content(this,'/product.do?product_id=108','product_a')"></a>
 			</div>
 			<div id="preview-slide-1" class="preview-hide"
 				style="height: 100%; width: 100%; background: url(&quot;/img/04.jpg&quot;) no-repeat scroll 50% 0% rgb(119, 120, 122); display: none;">
@@ -14,8 +13,7 @@
 			</div>
 			<div id="preview-slide-2" class="preview-hide"
 				style="height: 100%; width: 100%; background: url(&quot;/img/03.jpg&quot;) no-repeat scroll 50% 0% rgb(0, 133, 178); display: none;">
-				<a style="display: block; height: 326px;" href="/index.php?id=158"
-					target="_blank">&nbsp;</a>
+			    <a style="display: block; height: 326px;" href="javascript:void(0)" onclick="load_content(this,'/product.do?product_id=106','product_a')"></a>
 			</div>
 			<div id="preview-slider-line" class="pngfix">
 				<ul id="preview-slider-holder">
@@ -243,13 +241,11 @@
 													<tbody>
 														<tr>
 															<td valign="top" align="center"><a
-																href="http://www.topwalk.com/index.php?id=108"
-																title="部门间信息共享与服务平台 Topwalk-ISSP" target="_blank"><img
+																href="http://www.topwalk.com/index.php?id=108"><img
 																	alt="部门间信息共享与服务平台 Topwalk-ISSP"
 																	src="/img/upload/dsd_66wLc7_lYfTOw.jpg" class="photo"
 																	border="0" height="65" width="280" align="bottom"></a><br>
-																<a href="http://www.topwalk.com/index.php?id=108"
-																target="_blank" title="部门间信息共享与服务平台 Topwalk-ISSP"></a></td>
+																</td>
 														</tr>
 													</tbody>
 												</table>
